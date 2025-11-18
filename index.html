@@ -1,50 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALMAFUERTEROS</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <header class="header">
-  <!-- Contenedor del logo -->
-<div class="logo">
-  <img 
-    src="https://images.seeklogo.com/logo-png/33/2/almafuerte-logo-png_seeklogo-332148.png" 
-    alt="Imagen 1"
-    style="cursor: pointer;" 
-    onclick="location.reload();">
-</div>
-
-
-  <!-- Botón del menú hamburguesa (solo visible en pantallas pequeñas) -->
-  <button class="menu-toggle" id="menu-toggle">☰</button>
-
-  <!-- Navegación principal con las secciones del sitio -->
-  <nav class="cositas" id="menu">
-    <a href="#inicioah" class="boton">INICIO</a>
-    <a href="#historia1" class="boton">HISTORIA</a>
-    <a href="#discografia" class="boton">DISCOGRAFIA</a>
-    <a href="#conciertos" class="boton">CONCIERTOS</a>
-    <a href="#integrantes" class="boton">INTEGRANTES</a>
-    <a href="#contacto" class="boton">CONTACTO</a>
-  </nav>
-</header>
-
 <!-- Script JavaScript para manejar el despliegue del menú -->
-<script>
-  // Obtenemos el botón del menú y el contenedor del menú
-  const toggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('menu');
-
-  // Escuchamos el clic en el botón
-  toggle.addEventListener('click', () => {
-    // Alterna la clase "show" en el menú (si la tiene, la quita; si no, la agrega)
-    menu.classList.toggle('show');
-  });
-</script>
 
     <section class="presentacion" id="inicioah">
         <div class="texto">
@@ -72,8 +29,6 @@
     style="cursor: pointer;" 
     onclick="location.reload();">
 </div>
-
-
   <button class="menu-toggle" id="menu-toggle">☰</button>
 
   <nav class="cositas" id="menu">
@@ -257,5 +212,17 @@
         <li>Donaciones: <a href="">thiago.ong</a></li>
     </ul>
     </footer>
+    <script>
+  // Obtenemos el botón del menú y el contenedor del menú
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  // Escuchamos el clic en el botón
+  toggle.addEventListener('click', () => {
+    // Alterna la clase "show" en el menú (si la tiene, la quita; si no, la agrega)
+    menu.classList.toggle('show');
+  });
+</script>
+
 </body>
 </html>
